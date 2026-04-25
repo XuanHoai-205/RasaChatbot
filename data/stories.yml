@@ -1,0 +1,13 @@
+version: "3.1"
+
+stories:
+
+
+- story: hỏi về văn bản pháp luật
+  steps:
+  - intent: hoi_ve_van_ban_phap_luat
+  - action: action_tra_loi_cau_hoi
+- story: hỏi về vấn đề khác
+  steps:
+  - intent: hoi_ve_cac_van_de_khac
+  - action: utter_ngoai_pham_vi

@@ -1,0 +1,20 @@
+# Các file sinh ra khi training (Rất nặng, không nên push)
+.rasa/
+models/
+.status
+.config
+events.db
+rasa.db
+results/
+
+# Python & Môi trường ảo
+__pycache__/
+venv/
+env/
+*.py[cod]
+
+# File cấu hình cá nhân
+.env
+.vscode/
+.idea/
+vbpl.db

@@ -1,0 +1,80 @@
+version: "3.1"
+
+intents:
+  - chao_hoi
+  - tam_biet
+  - cam_on
+  - hoi_ve_van_ban_phap_luat
+  - hoi_ve_cac_van_de_khac
+entities:
+  - ten
+  - ten_diem
+  - ten_dieu
+  - ten_khoan
+  - quanhe_vanban
+
+# slots:
+#   ten:
+#     type: text
+#     influence_conversation: true
+#   ten_dieu:
+#     type: text
+#     influence_conversation: true
+#   ten_khoan:
+#     type: text
+#     influence_conversation: true
+#   ten_diem:
+#     type: text
+#     influence_conversation: true
+#   quanhe_vanban:
+#     type: text
+#     influence_conversation: true
+slots:
+  ten:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: ten
+
+  ten_dieu:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: ten_dieu
+
+  ten_khoan:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: ten_khoan
+
+  ten_diem:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: ten_diem
+
+  quanhe_vanban:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: quanhe_vanban
+
+responses:
+  utter_chao_hoi:
+    - text: "Xin chào! Tôi là chatbot hỗ trợ tra cứu pháp luật."
+  utter_tam_biet:
+    - text: "Tạm biệt, chúc bạn một ngày tốt lành."
+  utter_cam_on:
+    - text: "Rất hân hạnh được giúp bạn."
+  utter_ngoai_pham_vi:
+    - text: "Xin lỗi, tôi chỉ có thể trả lời câu hỏi liên quan đến pháp luật."
+
+actions:
+  - action_tra_loi_cau_hoi
+  

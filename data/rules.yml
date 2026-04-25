@@ -1,0 +1,20 @@
+version: "3.1"
+rules:
+- rule: chào hỏi
+  steps:
+  - intent: chao_hoi
+  - action: utter_chao_hoi
+
+- rule: tạm biệt
+  steps:
+  - intent: tam_biet
+  - action: utter_tam_biet
+
+- rule: Trả lời câu hỏi pháp luật
+  steps:
+  - intent: hoi_ve_van_ban_phap_luat
+  - action: action_tra_loi_cau_hoi
+- rule: Hỏi vấn đề khác
+  steps:
+  - intent: hoi_ve_cac_van_de_khac
+  - action: utter_ngoai_pham_vi
