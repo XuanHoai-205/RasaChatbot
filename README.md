@@ -9,7 +9,7 @@ Việc sử dụng môi trường ảo giúp quản lý thư viện độc lập
 # Nếu chưa tạo: python -m venv .venv
 .\.venv\Scripts\activate
 
-#Trên macOS/Linux:
+# Trên macOS/Linux:
 # Nếu chưa tạo: python3 -m venv .venv
 source .venv/bin/activate
 2. Cài đặt các thư viện cần thiết
